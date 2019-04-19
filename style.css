@@ -1,0 +1,303 @@
+*{padding: 0; margin: 0; box-sizing: border-box; text-decoration: none; list-style: none;}
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+.containermenu{
+	width: 100%;
+	position: fixed;
+	z-index: 3;
+}
+.containermenuBlock__image{
+	width: 95px;
+	height: 95px;
+	margin-right: 25vw;
+}
+.containermenuBlock{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-image: linear-gradient(to right, rgba(140,232,65,0.9), rgba(255,253,73,0.9));
+}
+.containermenuBlock__link{
+	font-size: 30px;
+	color: grey;
+	font-weight: bold;
+	font-family: 'Quicksand', sans-serif;
+}
+.containermenuBlock__link:hover{
+	font-weight: bolder;
+	font-size: 38px;
+	color: black;
+}
+#mobile{
+	display: none;
+}
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+}
+.containervasco{
+	width: 80vw;
+	height: 110vh;
+	background-color: black;
+	margin-top: 110px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	border-radius: 3%;
+}
+@media (max: 900px){
+	.containervasco{
+		flex-direction: column;
+	}
+}
+.containervascoBlock__historia{
+	width: 40%;
+	height: 50vh;
+	background-color: black;
+	border-radius: 5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 120px;
+	box-shadow: 1px 10px 20px white;
+	margin-top: 50px;
+}
+.containervascoTitle{
+	display: flex;
+	align-self: flex-start;
+	font-size: 25px;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	margin-top: 5px;
+}
+.containervascoBlock__input{
+	width: 40%;
+	height: 50vh;
+	background-color: black;
+	box-shadow: 10px 1px 20px white;
+	border-radius: 5%;
+	margin-bottom: 120px;
+	display: flex;
+	flex-flow: column wrap;
+	margin-top: 50px;
+}
+.containervascoBlock__imageVasco{
+	width: 140px;
+	height: 100px;
+}
+.containervascoBlock__image{
+	width: 190px;
+	height: 100px;
+}
+.containervascoBlock__paragraph{
+	color: white;
+	font-family: 'Quicksand', sans-serif;	
+	text-align: center;
+	margin-bottom: 45px;
+	font-weight: bold;
+}
+.containervascoBlock__inputTitle{
+	font-size: 25px;
+	text-align: center;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.containervascoBlock__inputFormulario{
+	display: flex;
+	flex-flow: column wrap;
+}
+.containervascoBlock__inputSocio{
+	margin: 15px;
+	width: 250px;
+	height: 20px;
+}
+.containervascoBlock__inputCadastro{
+	font-size: 20px;
+	color: white;
+}
+.containervascoBlock__inputFormulario__button{
+	width: 50px;
+	margin-top: 15px;
+	margin-left: 20px;
+
+}
+.containervascoBlock__video{
+	width: 460px;
+	height: 280px;
+	position: relative;
+	bottom: 49px;
+}
+.containerflamengo{
+	width: 80vw;
+	height: 110vh;
+	background-color: red;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	align-items: center;
+	border-radius: 3%;	
+}
+.containerflamengoBlock__titulosidolos{
+	width: 35vw;
+	height: 52vh;
+	background-color: transparent;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-around;
+	border-radius: 5%;
+	margin-bottom: 30vh;
+	box-shadow: 1px 10px 20px black;
+	margin-left: 25px;
+}
+.containerflamengoBlock__titulosidolosLista__titulos, .containerflamengoBlock__titulosidolosLista__idolos{
+	font-size: 25px;
+	margin-top: 15px;
+
+}
+.containerflamengoTitle{
+	display: flex;
+	align-self: flex-start;
+	font-size: 25px;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	margin-top: 10px;
+}
+.containerflamengoBlock__historia{
+	width: 35vw;
+	height: 52vh;
+	background-color: transparent;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-radius: 5%;
+	margin-bottom: 30vh;
+	margin-right: 25px;
+	box-shadow: 10px 1px 20px black;
+}
+.containerflamengoBlock__historiaImageflamengo{
+	width: 120px;
+	height: 100px;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+.containerflamengoBlock__historiaImageadidas{
+	width: 120px;
+	height: 100px;
+	margin-right: 5px;
+	margin-top: 5px;
+
+}
+.containerflamengoBlock__historiaParagraph{
+	color: black;
+	font-family: 'Quicksand', sans-serif;	
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 30px;	
+}
+.containerflamengoBlock__historiaVideo{
+	position: relative;
+	right: 20vw;
+	top: 10vh;
+}
+.containerfluminense{
+	width: 80vw;
+	height: 110vh;
+	background-color: green;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	align-items: center;
+	border-radius: 3%;		
+}
+.containerfluminenseBlock__esportes{
+	width: 35vw;
+	height: 52vh;
+	background-color: transparent;
+	display: flex;
+	flex-flow: nowrap;
+	justify-content: space-around;
+	border-radius: 5%;
+	margin-bottom: 30vh;
+	box-shadow: 1px 10px 20px black;
+	margin-left: 25px;
+}
+.containerfluminenseBlock__esportesLista__title{
+	font-size: 30px;
+	align-self: flex-start;
+
+}
+.containerfluminenseBlock__esportesLista{
+	font-size: 25px;
+	align-self: center;	
+}
+.containerfluminenseTitle{
+	display: flex;
+	align-self: flex-start;
+	font-size: 25px;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	margin-top: 10px;	
+}
+.containerfluminenseBlock__historia{
+	width: 35vw;
+	height: 52vh;
+	background-color: transparent;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	border-radius: 5%;
+	margin-bottom: 30vh;
+	box-shadow: 1px 10px 20px black;
+	margin-right: 25px;
+}
+.containerfluminenseBlock__historiaImagefluminense{
+	width: 95px;
+	height: 80px;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+.containerfluminenseBlock__historiaImageunder{
+	width: 120px;
+	height: 80px;
+	margin-left: 85px;
+	margin-top: 5px;
+}
+.containerfluminenseBlock__historiaParagraph{
+	color: black;
+	font-family: 'Quicksand', sans-serif;	
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 20px;	
+}
+.containerfluminenseVideo{
+	position: relative;
+	right: 60%;
+	top: 52px;
+}
+.blocksociais__linkfacebook{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+.blocksociais__linktwitter{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+.blocksociais__linkinstagram{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+.blocksociais__linksite{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
