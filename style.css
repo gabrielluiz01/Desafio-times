@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+html{
+	background-color: #D9E8D1;
+}
 .containermenu{
 	width: 100%;
 	position: fixed;
@@ -130,7 +133,7 @@ main{
 	width: 460px;
 	height: 280px;
 	position: relative;
-	bottom: 49px;
+	bottom: 55px;
 }
 .containerflamengo{
 	width: 80vw;
@@ -156,9 +159,9 @@ main{
 	margin-left: 25px;
 }
 .containerflamengoBlock__titulosidolosLista__titulos, .containerflamengoBlock__titulosidolosLista__idolos{
-	font-size: 25px;
+	font-size: 20px;
 	margin-top: 15px;
-
+	font-family: 'Quicksand', sans-serif;
 }
 .containerflamengoTitle{
 	display: flex;
@@ -174,20 +177,20 @@ main{
 	background-color: transparent;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	border-radius: 5%;
 	margin-bottom: 30vh;
 	margin-right: 25px;
-	box-shadow: 10px 1px 20px black;
+	box-shadow: 1px 10px 20px black;
 }
 .containerflamengoBlock__historiaImageflamengo{
-	width: 120px;
+	width: 100px;
 	height: 100px;
 	margin-left: 5px;
 	margin-top: 5px;
 }
 .containerflamengoBlock__historiaImageadidas{
-	width: 120px;
+	width: 130px;
 	height: 100px;
 	margin-right: 5px;
 	margin-top: 5px;
@@ -198,7 +201,7 @@ main{
 	font-family: 'Quicksand', sans-serif;	
 	text-align: center;
 	font-weight: bold;
-	margin-bottom: 30px;	
+	margin-top: 30px;
 }
 .containerflamengoBlock__historiaVideo{
 	position: relative;
@@ -231,11 +234,18 @@ main{
 .containerfluminenseBlock__esportesLista__title{
 	font-size: 30px;
 	align-self: flex-start;
-
+	font-family: 'Quicksand', sans-serif;
+	color: white;
 }
 .containerfluminenseBlock__esportesLista{
 	font-size: 25px;
 	align-self: center;	
+	font-family: 'Quicksand', sans-serif;
+	margin-top: 15px;
+	color: white;
+}
+.containerfluminenseBlock__esportesLista__li{
+	margin-top: 50px;
 }
 .containerfluminenseTitle{
 	display: flex;
@@ -243,7 +253,8 @@ main{
 	font-size: 25px;
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
-	margin-top: 10px;	
+	margin-top: 10px;
+	color: white;	
 }
 .containerfluminenseBlock__historia{
 	width: 35vw;
@@ -251,14 +262,14 @@ main{
 	background-color: transparent;
 	display: flex;
 	flex-flow: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	border-radius: 5%;
 	margin-bottom: 30vh;
 	box-shadow: 1px 10px 20px black;
 	margin-right: 25px;
 }
 .containerfluminenseBlock__historiaImagefluminense{
-	width: 95px;
+	width: 85px;
 	height: 80px;
 	margin-left: 5px;
 	margin-top: 5px;
@@ -274,30 +285,42 @@ main{
 	font-family: 'Quicksand', sans-serif;	
 	text-align: center;
 	font-weight: bold;
-	margin-bottom: 20px;	
+	margin-top: 25px;
+	color: white;
 }
 .containerfluminenseVideo{
 	position: relative;
 	right: 60%;
 	top: 52px;
 }
-.blocksociais__linkfacebook{
+.containerfooter{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	background-image: linear-gradient(to right, rgba(140,232,65,0.9), rgba(255,253,73,0.9));
+	margin-top: 15px;
+}
+.containerfooterLista__sociais{
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
 }
-.blocksociais__linktwitter{
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
+@keyframes contatos{
+	100% {color: red;}
 }
-.blocksociais__linkinstagram{
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
+.containerfooterTitle{
+	font-size: 35px;
+	font-family: 'Raleway', sans-serif;
+	animation-name: contatos;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	animation-delay: -1s;
+	animation-direction: alternate;
 }
-.blocksociais__linksite{
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
+.containerfooterLista{
+	margin-top: 25px;
+}
+.containerfooterLista__sociaisLink{
+	font-size: 20px;
+	color: black;
 }
