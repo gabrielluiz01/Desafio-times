@@ -1,6 +1,7 @@
 *{padding: 0; margin: 0; box-sizing: border-box; text-decoration: none; list-style: none;}
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Pridi');
 
 html{
 	background-color: #D9E8D1;
@@ -297,6 +298,7 @@ main{
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 	background-image: linear-gradient(to right, rgba(140,232,65,0.9), rgba(255,253,73,0.9));
 	margin-top: 15px;
 }
@@ -304,6 +306,7 @@ main{
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
+	align-self: flex-start;
 }
 @keyframes contatos{
 	100% {color: red;}
@@ -316,6 +319,9 @@ main{
 	animation-duration: 1s;
 	animation-delay: -1s;
 	animation-direction: alternate;
+	position: relative;
+	left: 25%;
+	bottom: 25px;
 }
 .containerfooterLista{
 	margin-top: 25px;
@@ -323,4 +329,9 @@ main{
 .containerfooterLista__sociaisLink{
 	font-size: 20px;
 	color: black;
+}
+.containerfooterEmail, .containerfooterDireitos{
+	font-family: 'Pridi', serif;
+	align-self: flex-end;
+	margin-right: 5%;
 }
