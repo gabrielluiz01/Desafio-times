@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="style.css">
-	<meta name="viewport" content="width=device-width, scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Pridi" rel="stylesheet">
@@ -12,28 +12,30 @@
 <body>
 	<header>
 		<nav class="containermenu">
-			<label for="mobile"></label>
-			<input type="checkbox" id="mobile">
+			<input class="input" id="menu-hamburguer" type="checkbox">
+			<label for="menu-hamburguer">
+				<span class="hamburguer"></span>
+			</label>
 			<div class="containermenuBlock">
-			<img class="containermenuBlock__image" 
-				 src="assets/escudo-cbf.png"
-				 title="escudo-cbf">
-				<a  class="containermenuBlock__link"
-					href="#vasco">
-					Vasco	
-				</a>
-				<a  class="containermenuBlock__link"
-					href="#flamengo">
-					Flamengo	
-				</a>
-				<a  class="containermenuBlock__link"
-					href="#fluminense">
-					Fluminense
-				</a>
-				<a  class="containermenuBlock__link"
-					href="#contatos">
-					Contatos
-				</a>
+				<img class="containermenuBlock__image" 
+					 src="assets/escudo-cbf.png"
+					 title="escudo-cbf">
+					<a  class="containermenuBlock__link"
+						href="#vasco">
+						Vasco	
+					</a>
+					<a  class="containermenuBlock__link"
+						href="#flamengo">
+						Flamengo	
+					</a>
+					<a  class="containermenuBlock__link"
+						href="#fluminense">
+						Fluminense
+					</a>
+					<a  class="containermenuBlock__link"
+						href="#contatos">
+						Contatos
+					</a>
 			</div>
 		</nav>
 	</header>
@@ -68,7 +70,6 @@
 					<label class="containervascoBlock__inputCadastro">Sexo:
 						<input type="radio" name="Sexo"> Masculino
 						<input type="radio" name="Sexo"> Feminino
-						<input type="radio" name="Sexo"> Outros
 					</label>
 					<label class="containervascoBlock__inputCadastro">Planos:
 						<select>
@@ -79,9 +80,6 @@
 					</label>
 					<button class="containervascoBlock__inputFormulario__button">Enviar</button>
 				</form>	
-			</div>
-			<div class="containervascoBlock__video">
-				<iframe width="460" height="280" src="https://www.youtube.com/embed/hWOK9GovQts" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</section>
 		<section class="containerflamengo" id="flamengo">
@@ -143,7 +141,6 @@
 				<p class="containerflamengoBlock__historiaParagraph">
 					O Clube de Regatas do Flamengo é uma agremiação poliesportiva brasileira com sede na cidade do Rio de Janeiro. Fundado no bairro de mesmo nome para disputas de remo em 17 de novembro de 1895,tornou-se um dos clubes mais bem-sucedidos e populares do esporte brasileiro, especialmente pelo futebol. Tem como suas cores tradicionais o vermelho e o preto e como seus maiores rivais esportivos o Botafogo, o Fluminense e o Vasco da Gama.
 				</p>
-				<iframe class="containerflamengoBlock__historiaVideo" width="560" height="280" src="https://www.youtube.com/embed/YgvBkDtjC-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</section>
 		<section class="containerfluminense" id="fluminense">
@@ -175,7 +172,6 @@
 				<p class="containerfluminenseBlock__historiaParagraph">
 					Fluminense Football Club é uma agremiação poliesportiva e cultural sediada no bairro de Laranjeiras, Zona Sul da cidade do Rio de Janeiro, no Brasil, fundada em 21 de julho de 1902. É uma sociedade civil de caráter desportivo, que tem como principal atividade o futebol.Um dos quatro grandes clubes do Rio de Janeiro, primeiro entre os doze maiores do Brasil a entrar em campo e a ostentar a palavra futebol no nome, o Fluminense é o clube que mais disputou campeonatos estaduais no Brasil, tendo sido a sua primeira participação em 1906 e a de 2018 a sua 114ª.
 				</p>
-				<iframe class="containerfluminenseVideo" width="460" height="280" src="https://www.youtube.com/embed/brQ-lpBRby0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</section>
 	</main>
