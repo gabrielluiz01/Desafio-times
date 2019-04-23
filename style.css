@@ -1,57 +1,70 @@
-*{padding: 0; margin: 0; box-sizing: border-box; text-decoration: none; list-style: none;}
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.googleapis.com/css?family=Pridi');
-
-html{
-	background-color: #D9E8D1;
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
 }
-.containermenu{
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
+
+
+header{
 	width: 100%;
-	position: fixed;
-	z-index: 3;
+	background-image: linear-gradient(to right, green, yellow);
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	align-items: center;
 }
 .containermenuBlock__image{
-	width: 95px;
-	height: 95px;
-	margin-right: 25vw;
+	width: 100px;
+	height: 100px;
 }
-.containermenuBlock{
+.containermenu{
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	background-image: linear-gradient(to right, rgba(140,232,65,0.9), rgba(255,253,73,0.9));
+	padding: 15px;
+	font-family: 'Comfortaa', cursive;
 }
 .containermenuBlock__link{
 	font-size: 30px;
 	color: grey;
-	font-weight: bold;
-	font-family: 'Quicksand', sans-serif;
+	padding: 5px;
+	font-weight: 500;
 }
 .containermenuBlock__link:hover{
-	font-weight: bolder;
-	font-size: 38px;
 	color: black;
+	font-size: 35px;
+}
+@media	(max-width: 900px){
+	.containermenuBlock__link{
+		display: none;
+	}
 }
 #menu-hamburguer{
 	display: none;
 }
-.hamburguer{
-	display: block;
+.menu-hamburguer{
+	display: none;
 	background-color: #000;
-	width: 35px;
+	width: 30px;
 	height: 5px;
 	margin-left: 5px;
 	margin-top: 5px;
-	border-radius: 20%;		
+	border-radius: 20%;
 	transition: .5s ease-in-out;
 	position: relative;
-    left: 50%;
-    top: 25px;
-
+    left: 5px;
 }
-.hamburguer:before, 
-.hamburguer:after{
+@media (max-width: 900px){
+	.menu-hamburguer{
+		display: block;
+		margin-right: 15px;
+	}
+}
+.menu-hamburguer:before, 
+.menu-hamburguer:after{
 	background-color: #000;
 	content: '';
 	display: block;
@@ -59,354 +72,183 @@ html{
 	height: 100%;
 	position: absolute;
 	bottom: 10px;
-	top: 15px;
 	transition: .5s ease-in-out;
 }
-.hamburguer:before{
+.menu-hamburguer:before{
 	top: 10px;
 }
-.hamburguer:after{
+.menu-hambuguer:after{
 	top: -10px;
+}
+input{
+	display: none;
+}
+ input:checked ~ label .menu-hamburguer {
+    transform: rotate(45deg);
+}
+
+input:checked ~ label .menu-hamburguer:before {
+    transform: rotate(90deg);
+        top: 0;
+}
+
+input:checked ~ label .menu-hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
 }
 main{
 	display: flex;
-	flex-direction: column;
-	align-items: center; 
+	justify-content: center;
 }
 .containervasco{
 	width: 80vw;
 	height: 70vh;
 	background-color: black;
-	margin-top: 110px;
 	display: flex;
+	flex-flow: wrap column;
 	justify-content: space-around;
-	flex-wrap: wrap;
 	align-items: center;
-	border-radius: 3%;
+	margin-top: 15px;
+}
+@media (max-width: 425px){
+	.containervasco{
+		width: 100%;
+		height: 100%;
+		flex-flow: column;
+	}
 }
 .containervascoBlock__historia{
-	width: 40%;
-	height: 50vh;
-	background-color: transparent;
-	border-radius: 5%;
+	background-color: black;
+	width: 35vw;
+	height: 55vh;
 	display: flex;
-	flex-wrap: wrap;
+	flex-flow: column wrap;
+	flex-direction: row;
 	justify-content: space-around;
-	margin-bottom: 120px;
-	margin-top: 50px;
 }
-.containervascoTitle{
-	display: flex;
-	align-self: flex-start;
-	font-size: 25px;
-	color: white;
-	font-family: 'Raleway', sans-serif;
-	margin-top: 5px;
+@media(max-width: 768px){
+	.containervascoBlock__historia{
+		position: relative;
+		bottom: 30px;
+	}
+}
+@media (max-width: 425px){
+	.containervascoBlock__historia{
+		justify-content: flex-start;
+		justify-content: space-between;
+		background-color: transparent;
+		width: 80vw;
+		position: relative;
+		top: 30px;
+	}
 }
 .containervascoBlock__imageVasco{
-	width: 140px;
-	height: 100px;
+	width: 100px;
+	height: 90px;
+}
+@media (max-width: 425px){
+	.containervascoBlock__imageVasco{
+		width: 60px;
+		height: 50px;
+	}
 }
 .containervascoBlock__image{
-	width: 190px;
-	height: 100px;
+	width: 120px;
+	height: 90px;
+}
+@media (max-width: 425px){
+	.containervascoBlock__image{
+		width: 80px;
+		height: 60px;
+		position: relative;
+	}
 }
 .containervascoBlock__paragraph{
 	color: white;
-	font-family: 'Quicksand', sans-serif;	
-	text-align: center;
-	margin-bottom: 45px;
-	font-weight: bold;
+	font-family: 'Noto Sans TC', sans-serif;
 }
-.containervascoBlock__input{
-	width: 40%;
-	height: 50vh;
-	background-color: transparent;
-	border-radius: 5%;
-	margin-bottom: 120px;
-	display: flex;
-	flex-flow: column wrap;
-	margin-top: 50px;
+@media (max-width: 425px){
+	.containervascoBlock__paragraph{
+		display: block;
+		width: 80vw;
+	}
 }
-.containervascoBlock__inputTitle{
-	font-size: 25px;
-	text-align: center;
-	color: white;
-	font-family: 'Raleway', sans-serif;
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-.containervascoBlock__inputFormulario{
-	display: flex;
-	flex-flow: column wrap;
-}
-.containervascoBlock__inputSocio{
-	margin: 5px;
-	width: 250px;
-	height: 20px;
-}
-.containervascoBlock__inputCadastro{
-	font-size: 20px;
-	color: white;
-}
-.containervascoBlock__inputFormulario__button{
-	width: 50px;
-	margin-top: 15px;
-	margin-left: 20px;
 
-}
-.containerflamengo{
-	width: 80vw;
-	height: 70vh;
-	background-color: red;
-	margin-top: 10px;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: nowrap;
-	align-items: center;
-	border-radius: 3%;	
-}
-.containerflamengoBlock__titulosidolos{
-	width: 35vw;
-	height: 52vh;
-	background-color: transparent;
-	display: flex;
-	flex-flow: wrap;
-	justify-content: space-around;
-	border-radius: 5%;
-	margin-left: 25px;
-}
-.containerflamengoBlock__titulosidolosLista__titulos, .containerflamengoBlock__titulosidolosLista__idolos{
-	font-size: 20px;
-	margin-top: 15px;
-	font-family: 'Quicksand', sans-serif;
-}
-.containerflamengoTitle{
-	display: flex;
-	align-self: flex-start;
-	font-size: 25px;
-	font-family: 'Raleway', sans-serif;
-	text-align: center;
-	margin-top: 10px;
-}
-.containerflamengoBlock__historia{
-	width: 35vw;
-	height: 52vh;
-	background-color: transparent;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	border-radius: 5%;
-	margin-right: 25px;
-	box-shadow: 1px 10px 20px black;
-}
-.containerflamengoBlock__historiaImageflamengo{
-	width: 100px;
-	height: 100px;
-	margin-left: 5px;
-	margin-top: 5px;
-}
-.containerflamengoBlock__historiaImageadidas{
-	width: 130px;
-	height: 100px;
-	margin-right: 5px;
-	margin-top: 5px;
-
-}
-.containerflamengoBlock__historiaParagraph{
-	color: black;
-	font-family: 'Quicksand', sans-serif;	
-	text-align: center;
-	font-weight: bold;
-	margin-top: 30px;
-}
-.containerfluminense{
-	width: 80vw;
-	height: 70vh;
-	background-color: green;
-	margin-top: 10px;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: nowrap;
-	align-items: center;
-	border-radius: 3%;		
-}
-.containerfluminenseBlock__esportes{
-	width: 35vw;
-	height: 52vh;
-	background-color: transparent;
-	display: flex;
-	flex-flow: nowrap;
-	justify-content: space-around;
-	border-radius: 5%;
-	box-shadow: 1px 10px 20px black;
-	margin-left: 25px;
-}
-.containerfluminenseBlock__esportesLista__title{
+.containervascoTitle{
+	color: white;
 	font-size: 30px;
-	align-self: flex-start;
 	font-family: 'Quicksand', sans-serif;
-	color: white;
-}
-.containerfluminenseBlock__esportesLista{
-	font-size: 25px;
-	align-self: center;	
-	font-family: 'Quicksand', sans-serif;
-	margin-top: 15px;
-	color: white;
-}
-.containerfluminenseBlock__esportesLista__li{
-	margin-top: 50px;
-}
-.containerfluminenseTitle{
-	display: flex;
-	align-self: flex-start;
-	font-size: 25px;
-	font-family: 'Raleway', sans-serif;
-	text-align: center;
-	margin-top: 10px;
-	color: white;	
-}
-.containerfluminenseBlock__historia{
-	width: 35vw;
-	height: 52vh;
-	background-color: transparent;
-	display: flex;
-	flex-flow: wrap;
-	justify-content: space-around;
-	border-radius: 5%;
-	box-shadow: 1px 10px 20px black;
-	margin-right: 25px;
-}
-.containerfluminenseBlock__historiaImagefluminense{
-	width: 85px;
-	height: 80px;
-	margin-left: 5px;
-	margin-top: 5px;
-}
-.containerfluminenseBlock__historiaImageunder{
-	width: 120px;
-	height: 80px;
-	margin-left: 85px;
-	margin-top: 5px;
-}
-.containerfluminenseBlock__historiaParagraph{
-	color: black;
-	font-family: 'Quicksand', sans-serif;	
-	text-align: center;
-	font-weight: bold;
-	margin-top: 25px;
-	color: white;
-}
-.containerfooter{
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	background-image: linear-gradient(to right, rgba(140,232,65,0.9), rgba(255,253,73,0.9));
-	margin-top: 15px;
-}
-.containerfooterLista__sociais{
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	align-self: flex-start;
-}
-@keyframes contatos{
-	100% {color: red;}
-}
-.containerfooterTitle{
-	font-size: 35px;
-	font-family: 'Raleway', sans-serif;
-	animation-name: contatos;
-	animation-iteration-count: infinite;
-	animation-duration: 1s;
-	animation-delay: -1s;
-	animation-direction: alternate;
-	position: relative;
-	left: 25%;
-	bottom: 25px;
-}
-.containerfooterLista{
-	margin-top: 25px;
-}
-.containerfooterLista__sociaisLink{
-	font-size: 20px;
-	color: black;
-}
-.containerfooterEmail, .containerfooterDireitos{
-	font-family: 'Pridi', serif;
 	align-self: flex-end;
-	margin-right: 5%;
 }
-@media (max-width: 1259px){
-	.containervasco{
-		flex-direction: column;
-		justify-content: space-around;
-	}
-	.containervascoBlock__input{
-		flex-flow: column;
-		padding-bottom: 35px;
-		margin-bottom: 10px;
-		position: relative;
-		right: 10%;
-		bottom: 15px;
-	}
-	.containervascoBlock__historia{
-		font-size: 15px;
-		margin-bottom: 10px;
-		flex-flow: column;
-		justify-content: space-around;
-		align-items: center;
-		padding-top-bottom: 80px;
-	}
-	.containervascoBlock__imageVasco{
-		width: 120px;
-		height: 80px;
-		order: -3;
-	}
-	.containervascoBlock__image{
-		width: 150px;
-		height: 70px;
-	}
+@media (max-width: 768px){
 	.containervascoTitle{
-		margin-bottom: 43%;
+		position: relative;
+		left: 20%;
+	}
+}
+@media (max-width: 425px){
+	.containervascoTitle{
+		margin-right: 150px;
+		
+	}
+}
+.containervascoBlock__titulos{
+	background-color: black;
+	width: 35vw;
+	height: 55vh;
+	display: flex;
+	flex-flow: wrap column;
+	align-items: center;
+	justify-content: center;
+}
+@media (max-width: 425px){
+	.containervascoBlock__titulos{
+		background-color: pink;
+		justify-content: flex-start;
+		justify-content: space-between;
+		background-color: transparent;
+		width: 80vw;		
 	}
 }
 @media (max-width: 375px){
-	.containervasco{
-		justify-content: space-around;
-		flex-flow: column;
-	}
-	.containervascoBlock__inputSocio{
-	}
-	.containervascoBlock__inputTitle{
-	}
-	.containervascoBlock__imageVasco{
-		width: 70px;
-		height: 50px;
-		position: relative;
-		top: 35vh;
-		right: 10vw;
-	}
-	.containervascoBlock__image{
-		width: 70px;
-		height: 50px;
-		position: relative;
-		top: 27vh;
-		left: 8vw;
-	}
-	.containervascoBlock__paragraph{
-		font-size: 10px;
-		position: relative;
-		top: 28vh;
-	}
-	.containervascoTitle{
-		position: relative;
-		bottom: 23vh;
-		align-self: center;
-	}
-	.containervascoBlock__historia{
+	.containervascoBlock__titulos{
 		flex-flow: wrap;
+	}
+}
+.containervascoBlock__titulosTitle{
+	font-size: 30px;
+	color: white;
+
+}
+@media (max-width: 425px){
+	.containervascoBlock__titulosTitle{
+		position: relative;
+		top: 10%;
+	}
+}
+@media (max-width: 375px){
+	.containervascoBlock__titulosTitle{
+		position: relative;
+		left: 25%;
+	}
+}
+.containervascoBlock__titulosLista{
+	margin-top: 5px;
+	font-size: 25px;
+	color: white;
+	padding: 15px;
+	font-family: 'Quicksand', sans-serif;
+}
+@media (max-width: 425px){
+	.containervascoBlock__titulosLista{
+		position: relative;
+		bottom: 15%;
+	}
+}
+@media (max-width: 375px){
+	.containervascoBlock__titulosLista{
+		position: relative;
+		top: 5%;
+		font-size: 22px;
 	}
 }

@@ -4,43 +4,45 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Pridi" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+
 	<title>Desafio Times</title>
 </head>
 <body>
 	<header>
 		<nav class="containermenu">
-			<input class="input" id="menu-hamburguer" type="checkbox">
+			<input id="menu-hamburguer" type="checkbox">
 			<label for="menu-hamburguer">
-				<span class="hamburguer"></span>
+				<span class="menu-hamburguer"></span>
 			</label>
 			<div class="containermenuBlock">
-				<img class="containermenuBlock__image" 
-					 src="assets/escudo-cbf.png"
-					 title="escudo-cbf">
-					<a  class="containermenuBlock__link"
-						href="#vasco">
-						Vasco	
-					</a>
-					<a  class="containermenuBlock__link"
-						href="#flamengo">
-						Flamengo	
-					</a>
-					<a  class="containermenuBlock__link"
-						href="#fluminense">
-						Fluminense
-					</a>
-					<a  class="containermenuBlock__link"
-						href="#contatos">
-						Contatos
-					</a>
+				<a  class="containermenuBlock__link"
+					href="#vasco">
+					Vasco	
+				</a>
+				<a  class="containermenuBlock__link"
+					href="#flamengo">
+					Flamengo	
+				</a>
+				<a  class="containermenuBlock__link"
+					href="#fluminense">
+					Fluminense
+				</a>
+				<a  class="containermenuBlock__link"
+					href="#contatos">
+					Contatos
+				</a>
 			</div>
 		</nav>
+		<img class="containermenuBlock__image" 
+			src="assets/escudo-cbf.png"
+			title="escudo-cbf">
 	</header>
 	<main>
 		<section class="containervasco" id="vasco">	
+			<h1 class="containervascoTitle">Vasco da Gama</h1>
 			<div class="containervascoBlock__historia">
 				<img class="containervascoBlock__imageVasco"
 					src="assets/vasco.png"
@@ -50,38 +52,33 @@
 					 title="Logo-Diadora">	
 				<p class="containervascoBlock__paragraph">Club de Regatas Vasco da Gama é uma entidade sócio-poliesportiva brasileira com sede na cidade do Rio de Janeiro, fundada em 21 de agosto de 1898 por um grupo de remadores. Inspirados nas celebrações do quarto centenário da descoberta do caminho marítimo para as Índias, ocorrida em 1498, batizaram a nova agremiação com o nome do herói português que alcançou tal feito, o navegador Vasco da Gama.</p>
 			</div>
-			<h1 class="containervascoTitle">Vasco da Gama</h1>
-			<div class="containervascoBlock__input">
-				<h1 class="containervascoBlock__inputTitle">Seja Sócio Torcedor</h1>
-				<form class="containervascoBlock__inputFormulario">
-					<label class="containervascoBlock__inputCadastro">Nome:
-						<input class="containervascoBlock__inputSocio" type="text" name="nome" placeholder="Nome">
-					</label>
-					<label class="containervascoBlock__inputCadastro">Email:
-						<input class="containervascoBlock__inputSocio" type="email" name="email" placeholder="Email">
-					</label>
-					<label class="containervascoBlock__inputCadastro">Telefone:
-						<input class="containervascoBlock__inputSocio" type="tel" name="telefone" placeholder="(xx)xxxxx-xxxx">
-					</label>
-					<label class="containervascoBlock__inputCadastro">
-						Data de Nasc.:
-						<input class="containervascoBlock__inputSocio" type="date" name="data de nascimento">
-					</label>
-					<label class="containervascoBlock__inputCadastro">Sexo:
-						<input type="radio" name="Sexo"> Masculino
-						<input type="radio" name="Sexo"> Feminino
-					</label>
-					<label class="containervascoBlock__inputCadastro">Planos:
-						<select>
-							<option value="basico" selected>Básico</option>
-							<option value="medio">Médio</option>
-							<option value="premium">Premium</option>
-						</select>
-					</label>
-					<button class="containervascoBlock__inputFormulario__button">Enviar</button>
-				</form>	
+			<div class="containervascoBlock__titulos">
+				<h1 class="containervascoBlock__titulosTitle">Títulos</h1>
+				<ul class="containervascoBlock__titulosLista">
+					<li>
+						4 Campeonatos Brasileiros
+					</li>
+					<li>
+						1 Copa do Brasil
+					</li>
+					<li>
+						1 Brasileiro série B
+					</li>
+					<li>
+						3 Torneios Rio-São Paulo
+					</li>
+					<li>
+						1 Sul Americana
+					</li>
+					<li>
+						1 Libertadores
+					</li>
+					<li>
+						1 Mercosul
+					</li>
+				</ul>
 			</div>
-		</section>
+		<!-- </section>
 		<section class="containerflamengo" id="flamengo">
 			<div class="containerflamengoBlock__titulosidolos">
 				<ul class="containerflamengoBlock__titulosidolosLista">	
@@ -291,4 +288,4 @@
 		</ul>
 	</footer>
 </body>
-</html>
+</html> -->
