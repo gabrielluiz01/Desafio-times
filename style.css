@@ -621,6 +621,12 @@ main{
 	font-family: 'Noto Sans TC', sans-serif;	
 	color: white;
 }
+@media (max-width: 425px){
+	.containerfluminenseBlock__historiaParagraph{
+		position: relative;
+		left: 50px;
+	}
+}
 @media (max-width: 320px){
 	.containerfluminenseBlock__historiaParagraph{
 		position: relative;	
