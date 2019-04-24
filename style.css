@@ -711,3 +711,32 @@ main{
 		left: 0.5px;
 	}
 }
+@media (max-width: 900px){
+	label{
+		display: block;
+	}
+	.containermenuBlock{
+		text-align: center;
+		width: 100%;
+		display: none;
+	}
+	.containermenuBlock__link{
+      display: block;
+      width: 40%;
+      font-size: 20px;
+      font-weight: 400;
+      float: right;
+      border-bottom: 1px solid white;
+      background-color: white;
+      opacity: 0.8;
+      transition: transform .2s;
+	}
+	.containermenuBlock__link:hover{
+		transform: scale(1);
+		color: black;
+	}
+	#menu-hamburguer:checked ~ .containermenuBlock{
+		display: block;
+		float: right;
+	}
+}
