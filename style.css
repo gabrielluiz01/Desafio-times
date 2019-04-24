@@ -9,7 +9,12 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
 
-
+html{
+	background-color: #EEFEFF;	
+}
+body{
+	width: 100%;
+}
 header{
 	width: 100%;
 	background-image: linear-gradient(to right, green, yellow);
@@ -99,10 +104,12 @@ input:checked ~ label .menu-hamburguer:after {
 main{
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 .containervasco{
 	width: 80vw;
-	height: 70vh;
+	height: 70vh;	
 	background-color: black;
 	display: flex;
 	flex-flow: wrap column;
@@ -128,6 +135,8 @@ main{
 }
 @media(max-width: 768px){
 	.containervascoBlock__historia{
+		justify-content: space-around;
+		flex-flow: column;
 		position: relative;
 		bottom: 30px;
 	}
@@ -146,6 +155,12 @@ main{
 	width: 100px;
 	height: 90px;
 }
+@media (max-width: 768px){
+	.containervascoBlock__imageVasco{
+		width: 70px;
+		height: 60px;
+	}
+}
 @media (max-width: 425px){
 	.containervascoBlock__imageVasco{
 		width: 60px;
@@ -155,6 +170,15 @@ main{
 .containervascoBlock__image{
 	width: 120px;
 	height: 90px;
+}
+@media (max-width: 768px){
+	.containervascoBlock__image{
+		width: 80px;
+		height: 50px;
+		position: relative;
+		left: 40%;
+		bottom: 15%;
+	}
 }
 @media (max-width: 425px){
 	.containervascoBlock__image{
@@ -167,10 +191,28 @@ main{
 	color: white;
 	font-family: 'Noto Sans TC', sans-serif;
 }
+@media(max-width: 768px){
+	.containervascoBlock__paragraph{
+		display: block;
+		height: 50vh;
+		width: 45vw;
+	}
+}
 @media (max-width: 425px){
 	.containervascoBlock__paragraph{
 		display: block;
 		width: 80vw;
+	}
+}
+@media (max-width: 375px){
+	.containervascoBlock__paragraph{
+		margin-top: -50px;
+	}
+}
+@media (max-width: 320px){
+	.containervascoBlock__paragraph{
+		height: 40vh;
+		font-size: 13px;
 	}
 }
 
@@ -182,6 +224,7 @@ main{
 }
 @media (max-width: 768px){
 	.containervascoTitle{
+		font-size: 25px;
 		position: relative;
 		left: 20%;
 	}
@@ -201,18 +244,29 @@ main{
 	align-items: center;
 	justify-content: center;
 }
+@media (max-width: 768px){
+	.containervascoBlock__titulos{
+		background-color: transparent;
+		position: relative;
+		top: 5%;
+		left: 10%;
+	}
+}
 @media (max-width: 425px){
 	.containervascoBlock__titulos{
-		background-color: pink;
 		justify-content: flex-start;
 		justify-content: space-between;
 		background-color: transparent;
-		width: 80vw;		
+		width: 80vw;	
+		position: relative;
+		top: 48px;	
 	}
 }
 @media (max-width: 375px){
 	.containervascoBlock__titulos{
 		flex-flow: wrap;
+		position: relative;
+		bottom: 30px;
 	}
 }
 .containervascoBlock__titulosTitle{
@@ -220,23 +274,29 @@ main{
 	color: white;
 
 }
+@media (max-width: 768px){
+	.containervascoBlock__titulosTitle{
+		position: relative;
+		right: 10%;
+	}
+}
 @media (max-width: 425px){
 	.containervascoBlock__titulosTitle{
 		position: relative;
 		top: 10%;
+		right: 50px;
 	}
 }
 @media (max-width: 375px){
 	.containervascoBlock__titulosTitle{
 		position: relative;
 		left: 25%;
+		margin-top: -80px;
 	}
 }
 .containervascoBlock__titulosLista{
-	margin-top: 5px;
 	font-size: 25px;
 	color: white;
-	padding: 15px;
 	font-family: 'Quicksand', sans-serif;
 }
 @media (max-width: 425px){
@@ -248,7 +308,400 @@ main{
 @media (max-width: 375px){
 	.containervascoBlock__titulosLista{
 		position: relative;
-		top: 5%;
+		bottom: 15%;
 		font-size: 22px;
+	}
+}
+/*FINAL CONTAINER VASCO*/
+
+.containerflamengo{
+	width: 80vw;
+	height: 70vh;
+	background-color: red;
+	display: flex;
+	flex-flow: wrap column;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 15px;	
+}
+@media (max-width: 425px){
+	.containerflamengo{
+		width: 100%;
+		height: 100%;
+		flex-flow: column;		
+	}
+}
+.containerflamengoBlock__historiaImagefla{
+	width: 100px;
+	height: 90px;
+}
+@media (max-width: 768px){
+	.containerflamengoBlock__historiaImagefla{
+		width: 60px;
+		height: 50px;
+	}
+}
+.containerflamengoBlock__historiaImageadidas{
+	width: 120px;
+	height: 100px;
+}
+@media (max-width: 768px){
+	.containerflamengoBlock__historiaImageadidas{
+		width: 70px;
+		height: 50px;
+	}
+}
+.containerflamengoBlock__titulosidolos{
+	width: 35vw;
+	height: 55vh;
+	display: flex;
+	flex-flow: wrap;
+	align-items: center;
+	justify-content: center;
+}
+@media (max-width: 320px){
+	.containerflamengoBlock__titulosidolos{
+		height: 60vh;
+		flex-wrap: wrap;
+	}
+}
+@media (max-width: 375px){
+	.containerflamengoBlock__titulosidolos{
+		position: relative;
+		top: 20px;
+	}
+}
+@media (max-width: 425px){
+	.containerflamengoBlock__titulosidolos{
+		align-self: flex-start;
+		position: relative;
+		left: 10%;
+	}
+}
+@media (max-width: 768px){
+	.containerflamengoBlock__titulosidolos{
+		flex-direction: column;
+	}
+}
+.containerflamengoBlock__titulosidolosLista{
+	font-size: 25px;
+	font-family: 'Noto Sans TC', sans-serif;
+	align-self: center;
+}
+@media (max-width: 375px){
+	.containerflamengoBlock__titulosidolosLista{
+	}
+}
+@media (max-width: 768px){
+	.containerflamengoBlock__titulosidolosLista{
+		font-size: 20px;
+	}
+}
+.containerflamengoBlock__titulosidolosLista__titulos{
+	position: relative;
+	right: 15px;
+}
+@media (max-width: 375px){
+	.containerflamengoBlock__titulosidolosLista__titulos{
+		font-size: 20px;
+	}
+}
+.containerflamengoBlock__titulosidolosLista__idolos{
+	position: relative;
+	left: 15px;	
+}
+@media (max-width: 375px){
+	.containerflamengoBlock__titulosidolosLista__idolos{
+		font-size: 20px;
+	}
+}
+.containerflamengoBlock__historia{
+	background-color: transparent;
+	width: 35vw;
+	height: 60vh;
+	display: flex;
+	flex-flow: column wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+@media (max-width: 320px){
+	.containerflamengoBlock__historia{
+		background-color: blue;
+		height: 60vh;
+	}
+}
+@media (max-width: 375px){
+	.containerflamengoBlock__historia{
+		margin-top: -30px;
+	}
+}
+@media (max-width: 425px){
+	.containerflamengoBlock__historia{
+		order: -1;
+		justify-content: flex-start;
+		justify-content: space-between; 
+		background-color: transparent;
+		width: 80vw;
+		position: relative;
+		top: 30px;		
+	}
+}
+@media	(max-width: 768px){
+	.containerflamengoBlock__historia{
+		position: relative;
+		bottom: 5px;
+	}
+}
+.containerflamengoBlock__historiaParagraph{
+	font-family: 'Noto Sans TC', sans-serif;
+}
+@media (max-width: 320px){
+	.containerflamengoBlock__historiaParagraph{
+		font-size: 13px;
+		height: 40vh;
+		margin-top: -50px;
+	}
+}
+.containerflamengoTitle{
+	order: -2;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 30px;
+	align-self: flex-end;
+}
+@media (max-width: 425px){
+	.containerflamengoTitle{
+		align-self: flex-start;
+	}
+}
+@media (max-width: 768px){
+	.containerflamengoTitle{
+		font-size: 25px;
+	}
+}
+/*FINAL CONTAINER FLAMENGO*/
+
+.containerfluminense{
+	width: 80vw;
+	height: 70vh;
+	background-color: green;
+	display: flex;
+	flex-flow: wrap column;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 15px;	
+}
+@media (max-width: 425px){
+	.containerfluminense{
+		width: 100%;
+		height: 100%;
+		flex-flow: column;		
+	}
+}
+.containerfluminenseBlock__esportes{
+	width: 35vw;
+	height: 55vh;
+	display: flex;
+	flex-direction: column wrap;
+}
+@media (max-width: 320px){
+	.containerfluminenseBlock__esportes{
+		margin-top: 15px;
+	}
+}
+@media (max-width: 375px){
+	.containerfluminenseBlock__esportes{
+		position: relative;
+		top: 5vh;
+	}
+}
+@media (max-width: 425px){
+	.containerfluminenseBlock__esportes{
+		align-self: flex-start;
+		position: relative;
+		left: 10%;
+	}
+}
+@media (max-width: 768px){
+	.containerfluminenseBlock__esportes{
+		flex-direction: column wrap;
+		width: 35vw;
+		justify-content: space-between;
+		align-self: flex-start;
+		position: relative;
+		left: 5px;
+	}
+}
+.containerfluminenseBlock__esportesLista{
+	font-size: 25px;
+	font-family: 'Noto Sans TC', sans-serif;
+	align-self: center;
+	color: white;
+}
+@media (max-width: 768px){
+	.containerfluminenseBlock__esportesLista{
+		font-size: 20px;
+	}
+}
+.containerfluminenseBlock__esportesLista__title{
+	font-size: 25px;
+	font-family: 'Quicksand', sans-serif;	
+	color: white;
+}
+.containerfluminenseTitle{
+	order: -2;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 30px;
+	align-self: flex-end;
+	color: white;
+}
+@media (max-width: 425px){
+	.containerfluminenseTitle{
+		align-self: flex-start;
+	}
+}
+@media (max-width: 768px){
+	.containerfluminenseTitle{
+		font-size: 25px;
+	}
+}
+.containerfluminenseBlock__historia{
+	background-color: transparent;
+	width: 35vw;
+	height: 60vh;
+	display: flex;
+	flex-flow: column wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+@media (max-width: 425px){
+	.containerfluminenseBlock__historia{
+		order: -1;
+		flex-flow: column;
+	}
+}
+@media (max-width: 768px){
+	.containerfluminenseBlock__historia{
+		height: 65vh;
+		width: 40vw;
+	}
+}
+.containerfluminenseBlock__historiaImagefluminense{
+	width: 90px;
+	height: 80px;
+}
+@media (max-width: 375px){
+	.containerfluminenseBlock__historiaImagefluminense{
+		position: relative;
+		right: 20vw;
+		top: 6vh;
+	}
+}
+@media (max-width: 768px){
+	.containerfluminenseBlock__historiaImagefluminense{
+		width: 50px;
+		height: 40px;
+	}
+}
+.containerfluminenseBlock__historiaImageunder{
+	width: 90px;
+	height: 80px;
+}
+@media (max-width: 375px){
+	.containerfluminenseBlock__historiaImageunder{
+		align-self: flex-end;
+	}
+}
+@media (max-width: 768px){
+	.containerfluminenseBlock__historiaImageunder{
+		width: 50px;
+		height: 40px;
+	}
+}
+.containerfluminenseBlock__historiaParagraph{
+	font-family: 'Noto Sans TC', sans-serif;	
+	color: white;
+}
+@media (max-width: 320px){
+	.containerfluminenseBlock__historiaParagraph{
+		position: relative;	
+		left: 50px;
+	}
+}
+@media (max-width: 768px){
+	.containerfluminenseBlock__historiaParagraph{
+		display: block;
+		width: 80vw;
+		align-self: flex-end;
+	}
+}
+.containerfooter{
+	width: 100%;
+	background-image: linear-gradient(to right, green, yellow);
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+@media (max-width: 768px){
+	.containerfooter{
+		flex-flow: column;
+		align-items: center;		
+	}
+}
+.containerfooterLista__sociaisLinktimes{
+	font-size: 20px;
+	font-family: 'Noto Sans TC', sans-serif;
+	color: black;	
+}
+@media (max-width: 768px){
+	.containerfooterLista__sociaisLinktimes{
+		position: relative;
+		top: 40px;
+	}
+}
+.containerfooterLista__sociais{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+.containerfooterLista__sociaisLink{
+	font-size: 20px;
+	font-family: 'Noto Sans TC', sans-serif;
+	color: black;
+}
+@keyframes contatos{
+	100% {color: red;}
+}
+.containerfooterTitle{
+	font-size: 30px;
+	font-family: 'Quicksand', sans-serif;
+	animation-name: contatos;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	animation-direction: alternate;
+	position: relative;
+	left: 20%;
+}
+@media (max-width: 768px){
+	.containerfooterTitle{
+		align-self: flex-start;
+		position: relative;
+		bottom: 80px;
+	}
+}
+.containerfooterEmail{
+	align-self: center;
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: bold; 	
+}
+.containerfooterDireitos{
+	align-self: flex-end;
+	position: relative;
+	right: 28%;
+	font-family: 'Noto Sans TC', sans-serif;	
+}
+@media (max-width: 425px){
+	.containerfooterDireitos{
+		position: relative;
+		left: 0.5px;
 	}
 }
